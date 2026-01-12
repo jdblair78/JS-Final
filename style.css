@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 56px 0px;
+}
+
+.row {
+    padding: 0 24px;
+}
+
+/* NAV */
+
+.navbar {
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(https://wallpaperaccess.com/full/121821.png);
+    background-size: cover;
+
+}
+
+.link__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav__link {
+    text-decoration: none;
+    padding-right: 36px;
+    list-style-type: none;
+    font-size: 36px;
+}
+
+.nav__link--anchor {
+    text-decoration: none;
+    color: Black;
+    font-weight: 700;
+    transition: all 300ms ease;
+
+}
+
+.nav__link--anchor:hover {
+    transform: translateY(1.2);
+    color: white;
+
+}
+
+.nav__logo {
+    height: 30px;
+    width: 10px;
+}
+
+.nav__btn {
+    padding: 12px 48px;
+    background-color: black;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+    color: red;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.nav__btn:hover {
+    transform: scale(1.04);
+    background-color: white;
+    color: black;
+}
+
+/* Browse */
+
+.browser__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.browser__title {
+    margin-bottom: 16px;
+    letter-spacing: 1.4px;
+}
+
+.browser__input {
+    font-size: 24px;
+    text-align: left;
+    padding: 8px 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 300ms ease;
+}
+
+.browser__input:hover {
+    border-color: red;
+}
+
+.fa-solid {
+    color: red;
+    font-size: 32px;
+    transition: all 300ms ease;
+}
+
+.fa-solid:hover {
+    transform: scale(1.1);
+}
