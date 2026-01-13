@@ -102,10 +102,6 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.browser__input:hover {
-    border-color: red;
-}
-
 .fa-solid {
     color: red;
     font-size: 32px;
@@ -180,4 +176,31 @@
 .dropdown:hover .dropbtn {
     background-color: grey;
     transform: scale(1.04);
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMART PHONES */
+
+@media (max-width: 768px) {
+    .nav__link--anchor{
+        font-size: 24px;
+        color: white;
+    }
+
+    .nav__btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .results__wrapper {
+        padding: 0px 12px;
+    }
+
+    .dropbtn {
+        font-size: 16px;
+        padding: 8px 32px;
+    }
+
+    .results__title {
+        font-size: 24px;
+    }
 }
