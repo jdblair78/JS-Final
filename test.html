@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ComicVine API Test</title>
+</head>
+<body>
+  <h1>ComicVine Comics</h1>
+  <button id="load">Load Comics</button>
+  <pre id="output"></pre>
+
+  <script>
+    const API_KEY = "97fda536b4a1f3d474285cfc3cabf0a29a0f3e09"
+
+    const proxy = "https://corsproxy.io/?";
+    const apiURL =
+      "https://comicvine.gamespot.com/api/issues/?format=json&limit=5&97fda536b4a1f3d474285cfc3cabf0a29a0f3e09" +
+      API_KEY;
+
+    const finalURL = proxy + encodeURIComponent(apiURL);
+
+    document.getElementById("load").addEventListener("click", () => {
+      fetch(finalURL)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("output").textContent =
+            JSON.stringify(data.results, null, 2);
+        })
+        .catch(err => console.error(err));
+    });
+  </script>
+</body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
