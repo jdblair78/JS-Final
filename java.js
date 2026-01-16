@@ -1,6 +1,6 @@
-const API_KEY = "97fda536b4a1f3d474285cfc3cabf0a29a0f3e09";
+const API_KEY = "ab612e22";
 
-const url = `https://api.example.com/comics?apikey=${API_KEY}`;
+const url = `http://www.omdbapi.com/?i=tt3896198&apikey=ab612e22`;
 
 fetch(url)
   .then(res => res.json())
@@ -9,4 +9,4 @@ fetch(url)
   });
 
 
-  
+ 
