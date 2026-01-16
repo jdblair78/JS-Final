@@ -63,8 +63,7 @@
 
 .nav__btn:hover {
     transform: scale(1.04);
-    background-color: white;
-    color: black;
+    background-color: grey;
 }
 
 /* BROWSE */
