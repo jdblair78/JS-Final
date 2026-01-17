@@ -1,24 +1,22 @@
-const API_KEY = "ab612e22";
+// API_KEY = "ab612e22";
 
-const url = `http://www.omdbapi.com/?apikey=ab612e22`;
-
-fetch(url)
-  .then(res => res.json())
-  .then(data => {
-    console.log(data);
-  });
+//  url = `http://www.omdbapi.com/?apikey=ab612e22&i=tt1285016`;
 
 async function main(){
-  const movies = await fetch("http://www.omdbapi.com/?apikey=ab612e22")
-  const moviesData = await movies.json();
-  console.log(moviesData)
-  const x = `<div class="movie-card">
+const url = await fetch("https://www.omdbapi.com/?apikey=ab612e22&s=Avengers")
+const moviesData = await url.json()
+const movieListEl = document.querySelector('.movie-card');
+console.log(moviesData)
+movieListEl.innerHTML = moviesData
+  .Search.map((movie) => {
+    return `<div class="movie-card">
       <div class="movie-card__container">
-        <h3>Movie Title</h3>
-        <p><b>Rating:</b>00/10</p>
+        <h3>${movie.Title}</h3>
+          <img src="${movie.Poster}" class="poster__img" />
       </div>
     </div>`
-  
+  }
+  )
 }
 
 main();
