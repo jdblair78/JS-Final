@@ -32,43 +32,56 @@
               <h1 class="browser__title">Browse our Selection</h1>
               <div class="input__wrapper">
                 <input
-                  type="search"
+                  type="text"
+                  id="search"
                   class="browser__input"
-                  placeholder="Movie Title"
+                  placeholder="Search Titles"
                 />
-                <a href="#" class="mag__glass">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="results">
+      <section id="results__display">
         <div class="container">
           <div class="row">
-            <div class="results__wrapper">
-              <h1 class="results__title">Search Results:</h1>
-              <div class="dropdown">
-                <button class="dropbtn">Search by Letter</button>
-                <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
-            </div>
-            <div class="movie__container">
-              <div class="movie__row">
-                <div class="movie-card">
-                  <h3>Movie Title</h3>
-                  <img src="#" class="poster__img" />
-                </div>
-              </div>
-            </div>
+            <a href="#" class="results__anchor">
+              <div id="results"></div>
+            </a>
           </div>
         </div>
       </section>
     </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer__links--wrapper">
+            <figure class="nav__logo">
+              <img src="assets/OIP (1).jpg" class="img" />
+            </figure>
+          </div>
+          <div class="footer__links">
+            <li class="footer__link">
+              <a href="#" class="footer__link--anchor">Home</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__link--anchor">Help Center</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__link--anchor">Legal</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__link--anchor">Terms of Use</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__link--anchor">Contact Us</a>
+            </li>
+          </div>
+          <div class="footer__copyright--wrapper">
+          <h4 class="copyright">&copy;Movies 2026</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
