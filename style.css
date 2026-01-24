@@ -91,6 +91,17 @@
     letter-spacing: 1.25;
 }
 
+#filter {
+    margin-top: 24px;
+    padding: 0 16px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgb(223, 222, 220);
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1.15px;
+}
+
 
 /* SEARCH RESULTS */
 
@@ -207,5 +218,14 @@
 
    .movie-card:hover {
         transform: scale(.6);
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__link {
+        padding: 8px 0px;
     }
 }

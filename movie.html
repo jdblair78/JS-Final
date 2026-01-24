@@ -38,6 +38,13 @@
                   placeholder="Search Titles"
                 />
               </div>
+              <select id="filter">
+                <option value="" disabled selected>Sort</option>
+                <option value="A_TO_Z">A to Z</option>
+                <option value="Z_TO_A">Z to A</option>
+                <option value="RELEASE_ASC">Older</option>
+                <option value="RELEASE_DSC">Newer</option>
+              </select>
             </div>
           </div>
         </div>
@@ -45,9 +52,7 @@
       <section id="results__display">
         <div class="container">
           <div class="row">
-            <a href="#" class="results__anchor">
               <div id="results"></div>
-            </a>
           </div>
         </div>
       </section>
